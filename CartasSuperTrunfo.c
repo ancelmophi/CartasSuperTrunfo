@@ -17,10 +17,10 @@ int main() {
   scanf("%c", &estado);
 
   printf("Digite o código da carta: ");
-  scanf("%s", &codigo_carta[20]);
+  scanf("%s", &codigo_carta);
 
   printf("Digite o nome da cidade: ");
-  scanf("%s", &nome_cidade[20]);
+  scanf("%s", &nome_cidade);
 
   printf("Digite a população: ");
   scanf("%d", &populacao);
