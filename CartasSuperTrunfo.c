@@ -61,14 +61,20 @@ void saida_dados() {
 }
 
 //Função para o cálculo da densidade populacional
-float densidade (int populacao, float area){
+float densidade (){
+
+int populacao;
+float area;
 
 return populacao / area;
 
 }
 
 //Função para o cálculo do PIB per capita
-float PIB (float pib, int populacao){
+float PIB (){
+
+int populacao;
+float pib;
 
 return pib / populacao;
 
@@ -81,8 +87,7 @@ int main() {
   
   // Área para entrada de dados
   entrada_dados();
-  
-  
+
 
   //Cálculo da densidade populacional
   densidade_populacional = densidade();
