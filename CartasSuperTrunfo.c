@@ -8,7 +8,7 @@ int main() {
 
   int populacao, pontos_turisticos;
   char estado, codigo_carta[20], nome_cidade[20];
-  float area, pib;
+  float area, pib, densidade_populacional, pib_percapita;
 
   // Área para entrada de dados
 
