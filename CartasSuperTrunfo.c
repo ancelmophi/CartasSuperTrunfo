@@ -5,6 +5,10 @@
 //Função para a entrada de dados
 void entrada_dados() {
 
+  int populacao, pontos_turisticos;
+  char estado, codigo_carta[20], nome_cidade[20];
+  float area, pib, densidade_populacional, pib_percapita;
+
   printf("Digite o estado: ");
   scanf("%c", &estado);
 
@@ -31,6 +35,11 @@ void entrada_dados() {
 //Função para saída de dados
 void saida_dados(){
 
+  int populacao, pontos_turisticos;
+  char estado, codigo_carta[20], nome_cidade[20];
+  float area, pib, densidade_populacional, pib_percapita;
+
+
   printf("Estado: %c\n ", estado);
 
   printf("Código da carta: %s\n ", codigo_carta);
@@ -48,9 +57,15 @@ void saida_dados(){
 }
 
 //Função para o cálculo da densidade populacional
-void densidade(){
+float densidade(){
 
- (float) populacao / area;
+  int populacao, pontos_turisticos;
+  char estado, codigo_carta[20], nome_cidade[20];
+  float area, pib, densidade_populacional, pib_percapita;
+
+
+  float x = populacao / area;
+  return x;
 
 }
 
@@ -58,17 +73,14 @@ void densidade(){
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  int populacao, pontos_turisticos;
-  char estado, codigo_carta[20], nome_cidade[20];
-  float area, pib, densidade_populacional, pib_percapita;
-
+  
   // Área para entrada de dados
   entrada_dados();
-  densidade_populacional = densidade();
+  float densidade_populacional = densidade();
   
   // Área para exibição dos dados da cidade
   saida_dados();
-  printf("%f",&densidade_populacional);
+  printf("Densidade populacional: %f\n", densidade_populacional);
   
   
 return 0;
