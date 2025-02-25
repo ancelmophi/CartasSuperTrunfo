@@ -2,15 +2,8 @@
 
 // Desafio Super Trunfo - Países
 
-
-int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
-
-  int populacao, pontos_turisticos;
-  char estado, codigo_carta[20], nome_cidade[20];
-  float area, pib, densidade_populacional, pib_percapita;
-
-  // Área para entrada de dados
+//Função para a entrada de dados
+void entrada_dados() {
 
   printf("Digite o estado: ");
   scanf("%c", &estado);
@@ -33,9 +26,11 @@ int main() {
   printf("Digite o número de pontos turísticos: ");
   scanf("%d", &pontos_turisticos);
 
-  // Área para exibição dos dados da cidade
+}
 
-  
+//Função para saída de dados
+void saida_dados(){
+
   printf("Estado: %c\n ", estado);
 
   printf("Código da carta: %s\n ", codigo_carta);
@@ -46,9 +41,35 @@ int main() {
 
   printf("Área: %f km²\n", area);
 
-  printf("PIB: %f\n", pib);
+  printf("PIB: %f bilhões de reais\n", pib);
 
   printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
+}
+
+//Função para o cálculo da densidade populacional
+void densidade(){
+
+ (float) populacao / area;
+
+}
+
+
+int main() {
+  // Área para definição das variáveis para armazenar as propriedades das cidades
+
+  int populacao, pontos_turisticos;
+  char estado, codigo_carta[20], nome_cidade[20];
+  float area, pib, densidade_populacional, pib_percapita;
+
+  // Área para entrada de dados
+  entrada_dados();
+  densidade_populacional = densidade();
+  
+  // Área para exibição dos dados da cidade
+  saida_dados();
+  printf("%f",&densidade_populacional);
+  
+  
 return 0;
 } 
