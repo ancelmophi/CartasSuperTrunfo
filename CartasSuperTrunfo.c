@@ -33,7 +33,7 @@ void entrada_dados() {
 }
 
 //Função para saída de dados
-void saida_dados(){
+void saida_dados() {
 
   int populacao, pontos_turisticos;
   char estado, codigo_carta[20], nome_cidade[20];
