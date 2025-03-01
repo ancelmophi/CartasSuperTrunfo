@@ -10,10 +10,10 @@ void entrada_dados(char estado, char codigo_carta[], char cidade[], int populaca
   scanf("%c", &estado);
 
   printf("Digite o código da carta: ");
-  scanf("%s", &codigo_carta);
+  scanf("%s", codigo_carta);
 
   printf("Digite o nome da cidade: ");
-  scanf("%s", &cidade);
+  scanf("%s", cidade);
 
   printf("Digite a população: ");
   scanf("%d", &populacao);
@@ -73,7 +73,7 @@ int main() {
   // Área para entrada de dados
   printf("Entre com os dados referentes a carta 1\n");
   entrada_dados(estado1, codigo_carta1, cidade1, populacao1, pontos_turisticos1, area1, pib1);
-  
+
   printf("Entre com os dados referentes a carta 2\n");
   entrada_dados(estado2, codigo_carta2, cidade2, populacao2, pontos_turisticos2, area2, pib2);
 
