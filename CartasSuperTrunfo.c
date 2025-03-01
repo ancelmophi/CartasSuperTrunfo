@@ -41,9 +41,9 @@ void saida_dados (char estado, char codigo_carta[], char cidade[], int populacao
 
   printf("População: %d\n", populacao);
 
-  printf("Área: %f km²\n", area);
+  printf("Área: %f\n", area);
 
-  printf("PIB: %f bilhões de reais\n", pib);
+  printf("PIB: %f\n", pib);
 
   printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
@@ -66,14 +66,15 @@ float percapita (float pib, int populacao)
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado1, estado2, codigo_carta1[20], codigo_carta2[20], cidade1, cidade2;
+  char estado1, estado2, codigo_carta1[20], codigo_carta2[20], cidade1[20], cidade2[20];
   int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
   float area1, area2, pib1, pib2, densidade_populacional1, densidade_populacional2, pib_percapita1, pib_percapita2;
 
   // Área para entrada de dados
-  printf("Digite os dados referentes a carta 1\n");
+  printf("Entre com os dados referentes a carta 1\n");
   entrada_dados(estado1, codigo_carta1, cidade1, populacao1, pontos_turisticos1, area1, pib1);
-  printf("Digite os dados referentes a carta 2\n");
+  
+  printf("Entre com os dados referentes a carta 2\n");
   entrada_dados(estado2, codigo_carta2, cidade2, populacao2, pontos_turisticos2, area2, pib2);
 
   //Cálculo da densidade populacional
@@ -87,6 +88,8 @@ int main() {
   // Área para exibição dos dados da cidade
   printf("Carta 1: \n");
   saida_dados(estado1, codigo_carta1, cidade1, populacao1, pontos_turisticos1, area1, pib1);
+
+  printf("Carta 2: \n");
   saida_dados(estado2, codigo_carta2, cidade2, populacao2, pontos_turisticos2, area2, pib2);
   
 return 0;
