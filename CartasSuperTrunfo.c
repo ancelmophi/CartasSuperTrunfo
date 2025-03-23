@@ -87,11 +87,13 @@ int main()
 
   printf("Densidade populacional da carta 1: %f\n", densidade_populacional1);
   printf("PIB per capita da carta 1: %f\n", pib_percapita1);
-  printf("Densidade populacional da carta 2: %f\n", densidade_populacional2);
-  printf("PIB per capita da carta 2: %f\n", pib_percapita2);
+  
 
   printf("Carta 2: \n");
   saida_dados(estado2, codigo_carta2, cidade2, populacao2, pontos_turisticos2, area2, pib2);
+
+  printf("Densidade populacional da carta 2: %f\n", densidade_populacional2);
+  printf("PIB per capita da carta 2: %f\n", pib_percapita2);
 
   return 0;
   
